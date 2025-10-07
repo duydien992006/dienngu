@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+.menu {
+    background-color: #282828;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu h1 {
+    color: #ff9800;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.menutrai {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.menuphai{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+}
+.timkiem input {
+  padding: 6px 12px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 14px;
+  color: black;
+  width: 220px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: #ff9800;
+}
+.banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: black;
+}
+.sanphamtrangchu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 20px;
+}
+.sanpham {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #dedede;
+}
+.sanpham:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.sanpham img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.sanpham p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+.thongtinshop {
+    background: #282828;
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 13px;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.thongtinshop strong {
+    color: #ff9800;
+}
+.banquyen {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    
+}
+.dathang{
+    margin-left: 20px; 
+}
+input[type="submit"] {
+    padding: 8px 16px;
+    border: 2px solid #ff9800;
+    border-radius: 6px;
+    background-color: white;
+    color: #ff9800;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #ff9800;
+    color: white;
+    border-color: #ff9800;
+}

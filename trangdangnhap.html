@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="btlweb.css">
+    <style>
+        .khuvucnoidungchinh {
+            flex-grow: 1; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px; 
+            background-color: #f0f2f5;
+        }
+        .khungdangnhap {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            color: #333333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        .nhominput {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555555;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 12px 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+        .nutdangnhap {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+            display: block; 
+            box-sizing: border-box;
+        }
+        .nutdangnhap:hover {
+            background-color: #0056b3;
+        }
+        .nutdangky {
+            background-color: #6c757d;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%; 
+            margin-top: 10px;
+            display: block; 
+            box-sizing: border-box;
+        }
+        .nutdangky:hover {
+            background-color: #5a6268; 
+        }
+    </style>
+    <script>
+        function DangNhap() {
+            var ten = document.getElementById("TenDangNhap").value;
+            var Matkhau = document.getElementById("MatKhau").value;
+            if (ten === "admin" && Matkhau === "admin") {
+                alert("Đăng nhập quản trị thành công!");
+                location.href = "trangquantri.html";
+            } else {
+                alert("Tên đăng nhập hoặc mật khẩu không đúng, vui lòng nhập lại!");
+            }
+        }
+
+        function ChuyenDenTrangDangKy() {
+            location.href = "trangdangky.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <h1>T&Đ Shop</h1>
+        <div class="menutrai">
+            <a href="trangchu.html">Trang chủ</a> 
+            <a href="trangdanhmuc.html">Danh mục</a> 
+            <a href="tranggiohang.html">Giỏ hàng</a> 
+            <a href="trangchitiet.html">Chi tiết sản phẩm</a> 
+            <a href="trangdathang.html">Đặt hàng</a> 
+        </div>
+        <div class="menuphai">
+            <a href="trangdangnhap.html">Đăng nhập</a>
+        </div> 
+    </div>
+
+    <div class="khuvucnoidungchinh">
+        <div class="khungdangnhap">
+            <h2>Đăng nhập</h2>
+            <div class="nhominput">
+                <label for="TenDangNhap">Tên đăng nhập:</label>
+                <input type="text" id="TenDangNhap" name="TenDangNhap" placeholder="Nhập tên đăng nhập">
+            </div>
+            <div class="nhominput">
+                <label for="MatKhau">Mật khẩu:</label>
+                <input type="password" id="MatKhau" name="MatKhau" placeholder="Nhập mật khẩu">
+            </div>
+            <button type="submit" onclick="DangNhap()" class="nutdangnhap">Đăng nhập</button>
+            <button type="button" onclick="ChuyenDenTrangDangKy()" class="nutdangky">Đăng ký</button>
+        </div>
+    </div>
+
+    <div class="thongtinshop">
+        <p><strong>T&Đ Shop</strong></p>
+        <p>Địa chỉ: xóm 5, thôn Năm Mẫu - xã Tứ Dân - huyện Khoái Châu - tỉnh Hưng Yên </p>
+        <p>Điện thoại: 0888 888 888</p>
+        <p>Email: T&Đshop@gmail.com</p>
+        <div class="banquyen">
+            <p>© 2025 Khoa CNTT - Trường ĐH Sư phạm Kỹ thuật Hưng Yên</p>
+            <p>Bản quyền thuộc về Đỗ Văn Trường & Nguyễn Duy Điền</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng</title>
+    <link rel="stylesheet" href="btlweb.css">
+    <script>
+        function dathang() {
+        alert("Đã đặt hàng thành công!");
+    }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <h1>T&Đ Shop</h1>
+        <div class="menutrai">
+            <a href="trangchu.html">Trang chủ</a> 
+            <a href="trangdanhmuc.html">Danh mục</a> 
+            <a href="tranggiohang.html">Giỏ hàng</a> 
+            <a href="trangchitiet.html">Chi tiết sản phẩm</a> 
+            <a href="trangdathang.html">Đặt hàng</a> 
+        </div>
+        <div class="menuphai">
+            <a href="trangdangnhap.html">Đăng nhập</a>
+        </div>       
+    </div>
+    <h2>Đặt Hàng</h2>
+    <div class="dathang">
+        <form>
+            <label for="hoten"><strong>Họ tên:</strong></label>
+            <input type="text" id ="hoten" name="hoten"><br><br>
+            <label for="diachi"><strong>Địa chỉ:</strong></label>
+            <input type="text" id ="diachi" name="diachi"><br><br>
+            <label for="sdt"><strong>Số điện thoại:</strong></label>
+            <input type="text" id ="sdt" name="sdt"><br><br>
+            <label for="ghichu"><strong>Ghi chú:</strong></label><br>
+            <textarea name="ghichu" rows="5" cols="30"></textarea><br><br>
+            <input type="submit" onclick="dathang()" value="Đặt hàng">
+        </form>
+    </div>
+    <div style="position:fixed; bottom:0; left:0; width:100%; background: #282828; color:white; text-align:left; padding:10px 20px; font-size:13px; ">
+        <p><strong style="color:#ff9800 ;">T&Đ Shop</strong></p>
+        <p>Địa chỉ: xóm 5, thôn Năm Mẫu - xã Tứ Dân - huyện Khoái Châu - tỉnh Hưng Yên </p>
+        <p>Điện thoại: 0888 888 888</p>
+        <p>Email: T&Đshop@gmail.com</p>
+        <div class="banquyen" style="text-align: center;margin: top 20px;font-size: 13px ;">
+            <p>© 2025 Khoa CNTT - Trường ĐH Sư phạm Kỹ thuật Hưng Yên</p>
+            <p>Bản quyền thuộc về Đỗ Văn Trường & Nguyễn Duy Điền</p>
+        </div>
+    </div>
+</body>
+</html>

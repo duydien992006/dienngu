@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản Trị - T&Đ Shop</title>
+    <link rel="stylesheet" href="btlweb.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>    
+        .Khungnoidung {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .Khungnoidung h2, .Khungnoidung h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .luoithongke {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .thethongke {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .thethongke:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .thethongke .bieutuongthongke {
+            font-size: 3em;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        .thethongke .giatrithongke {
+            font-size: 2em;
+            font-weight: bold;
+            color: #27ae60;
+            margin: 5px 0;
+        }
+        .thethongke .motathongke {
+            font-size: 0.9em;
+            color: #777;
+        }
+        .Khungbieudo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .hopbieudo {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center; 
+        }
+        .hopbieudo img {
+            max-width: 100%;
+            height: auto;
+             display: block;
+             margin: 10px auto 0;
+        }
+        .hinhanhsanpham {
+            display: flex; 
+            justify-content: space-around; 
+            align-items: flex-end; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+        }
+        .hinhanhsanpham img {
+            width: 100%;
+            max-width: 120px;
+            flex: 1 1 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>T&Đ Shop</h1> 
+        <div >
+            <a href="trangquanlysanpham.html" style="color:white;">Quản lý Sản Phẩm</a> |
+            <a href="trangquanlydonhang.html" style="color:white;">Đơn Hàng</a> 
+        </div>
+        <div>
+            <a href="trangdangnhap.html" style="color:white;">Đăng xuất</a>
+        </div>
+    </div>
+    <div class="Khungnoidung">
+        <h2>Chào mừng đến trang quản trị!</h2>
+        <h3>Thống kê tổng quan</h3>
+        <div class="luoithongke">
+            <div class="thethongke">
+                <span class="bieutuongthongke"><i class="fas fa-dollar-sign"></i></span>
+                <h4>Tổng Doanh Thu</h4>
+                <p class="giatrithongke">50.000.000đ</p>
+                <p class="motathongke">Tháng này</p>
+            </div>
+            <div class="thethongke">
+                <span class="bieutuongthongke"><i class="fas fa-shopping-cart"></i></span>
+                <h4>Tổng Đơn Hàng</h4>
+                <p class="giatrithongke">150</p>
+                <p class="motathongke">Trong quý</p>
+            </div>
+            <div class="thethongke">
+                <span class="bieutuongthongke"><i class="fas fa-box"></i></span>
+                <h4>Sản Phẩm Đã Bán</h4>
+                <p class="giatrithongke">520</p>
+                <p class="motathongke">Từ đầu năm</p>
+            </div>
+            <div class="thethongke">
+                <span class="bieutuongthongke"><i class="fas fa-users"></i></span>
+                <h4>Khách Hàng Mới</h4>
+                <p class="giatrithongke">25</p>
+                <p class="motathongke">Tuần này</p>
+            </div>
+        </div>
+
+        <h3>Biểu đồ phân tích và điểm nổi bật</h3>
+        <div class="Khungbieudo">
+            <div class="hopbieudo">
+                <h4>Doanh Thu Theo Tháng</h4>
+                <img src="./ảnh/doanhthu.png" alt="Biểu đồ doanh thu" style="width:100%; height:auto; display:block;">
+            </div>
+            <div class="hopbieudo">
+                <h4>Sản Phẩm Bán Chạy</h4>
+                <div class="hinhanhsanpham">
+                    <img src="./ảnh/sanphambanchay1.png" alt="Sản phẩm bán chạy 1">
+                    <img src="./ảnh/sanphambanchay2.png" alt="Sản phẩm bán chạy 2">
+                    <img src="./ảnh/sanphambanchay3.png" alt="Sản phẩm bán chạy 3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thongtinshop">
+        <p><strong>T&Đ Shop</strong></p>
+        <p>Địa chỉ: xóm 5, thôn Năm Mẫu - xã Tứ Dân - huyện Khoái Châu - tỉnh Hưng Yên </p>
+        <p>Điện thoại: 0888 888 888</p>
+        <p>Email: T&Đshop@gmail.com</p>
+        <div class="banquyen">
+            <p>© 2025 Khoa CNTT - Trường ĐH Sư phạm Kỹ thuật Hưng Yên</p>
+            <p>Bản quyền thuộc về Đỗ Văn Trường & Nguyễn Duy Điền</p>
+        </div>
+    </div>
+    
+</body>
+</html>

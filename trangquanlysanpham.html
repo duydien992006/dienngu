@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="btlweb.css">
+    <style>      
+        div[style="padding: 20px;"] { 
+            padding: 20px;
+            max-width: 900px; 
+            margin: 20px auto;
+            background-color: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            text-align: center;
+        }
+        h2 {
+            color: #2c3e50; 
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px; 
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #28a745; 
+            color: white; 
+            padding: 10px 15px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            margin-bottom: 15px; 
+        }
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 15px;
+            overflow-x: auto;
+        }
+        table th {
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 10px; 
+            text-align: center; 
+            border: 1px solid #ddd; 
+        }
+        table td {
+            padding: 8px; 
+            border: 1px solid #ddd;
+            text-align: center; 
+            vertical-align: middle; 
+        }
+        table td img {
+            max-width: 70px; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+        }
+        table td button {
+            padding: 5px 10px; 
+            margin: 2px;
+            font-size: 0.9em; 
+            border-radius: 4px; 
+        }
+        table td button:first-of-type { 
+            background-color: #007bff;
+        }
+        table td button:last-of-type {
+            background-color: #dc3545; 
+        }
+    </style>
+</head>
+<body>
+    <div class="menu" >
+        <h1>T&Đ Shop</h1>
+        <h3>Quản lý sản phẩm</h3>
+        <div>
+            <a href="trangquantri.html" style="color:white;">Trang chủ quản trị</a>   |
+            <a href="trangdangnhap.html" style="color:white;">Đăng xuất</a>
+        </div>
+    </div>
+
+    <div>
+        <h2>Danh sách sản phẩm</h2>
+        <p><button>Thêm sản phẩm mới</button></p>
+           <table border="1" style="width: 100%; border-collapse: collapse;">
+                <tr style="background-color: #f2f2f2;">
+                    <th>Hình ảnh</th>
+                    <th>Tên</th>
+                    <th>Giá</th>
+                    <th>Size</th> <th>Số lượng</th>
+                     <th>Hành động</th>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/sanphambanchay1.png" alt="Sản phẩm 1"></td>
+                    <td>Áo Polo Bắp Bơ Ri</td>
+                    <td>299.000đ</td>
+                    <td>M, L, XL</td>
+                    <td>50</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/sanphambanchay2.png" alt="Sản phẩm 2"></td>
+                    <td>Áo BALMAIN</td>
+                    <td>199.000đ</td>
+                    <td>S, M, L</td>
+                    <td>30</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/sanphambanchay3.png" alt="Sản phẩm 3"></td>
+                    <td>Áo thun AMIRI</td>
+                    <td>249.000đ</td>
+                    <td>M, L</td>
+                    <td>45</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/sanphambanchay4.png" alt="Sản phẩm 4"></td>
+                    <td>Áo thun Wash Big</td>
+                    <td>249.000đ</td>
+                    <td>L, XL</td>
+                    <td>20</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/sanphambanchay5.png" alt="Sản phẩm 5"></td>
+                    <td>Áo Navy-METALLIC</td>
+                    <td>249.000đ</td>
+                    <td>S, M</td>
+                    <td>60</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aothuntrang.png" alt="Sản phẩm 8"></td>
+                    <td>Áo thun nam</td>
+                    <td>250.000đ</td>
+                    <td>M, L, XL</td>
+                    <td>70</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aopolonam.png" alt="Sản phẩm 9"></td>
+                    <td>Áo polo nam</td>
+                    <td>400.000đ</td>
+                    <td>S, M, L</td>
+                    <td>35</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aosomidaitaynam.png" alt="Sản phẩm 10"></td>
+                    <td>Áo sơ mi dài tay nam</td>
+                    <td>500.000đ</td>
+                    <td>M, L</td>
+                    <td>25</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aosomicoctaynam.png" alt="Sản phẩm 11"></td>
+                    <td>Áo sơ mi cộc tay nam</td>
+                    <td>400.000đ</td>
+                    <td>L, XL</td>
+                    <td>40</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aothunboxybasic.png" alt="Sản phẩm 12"></td>
+                    <td>Áo thun form boxy basic</td>
+                    <td>400.000đ</td>
+                    <td>S, M, L</td>
+                    <td>55</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>       
+                <tr>
+                    <td><img src="./ảnh/aothunboxyhoatiettheuxu.png" alt="Sản phẩm 13"></td>
+                    <td>Áo thun form boxy họa tiết thêu xù</td>
+                    <td>500.000đ</td>
+                    <td>M, L</td>
+                    <td>15</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aosweaternibongtheudap.png" alt="Sản phẩm 14"></td>
+                    <td>Áo sweater nỉ bông thêu đắp</td>
+                    <td>700.000đ</td>
+                    <td>S, M</td>
+                    <td>10</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aothunhoatietran.png" alt="Sản phẩm 15"></td>
+                    <td>Áo thun họa tiết rắn năm ất tỵ 2025</td>
+                    <td>450.000đ</td>
+                    <td>M, L, XL</td>
+                    <td>20</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aopolongua.png" alt="Sản phẩm 16"></td>
+                    <td>Áo polo thêu họa tiết ngựa</td>
+                    <td>500.000đ</td>
+                    <td>S, M</td>
+                    <td>30</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aokhoaclv.png" alt="Sản phẩm 17"></td>
+                    <td>Áo khoác họa tiết LV</td>
+                    <td>1.000.000đ</td>
+                    <td>M, L</td>
+                    <td>5</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/aococtaylv.png" alt="Sản phẩm 18"></td>
+                    <td>Áo cộc tay họa tiết LV</td>
+                    <td>600.000đ</td>
+                    <td>S, M, L</td>
+                    <td>18</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>   
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/giaynikeAF1.png" alt="Sản phẩm 19"></td>
+                    <td>Giày NIKE AF1</td>
+                    <td>700.000đ</td>
+                    <td>38, 39, 40, 41, 42</td>
+                    <td>22</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./ảnh/quanjeanlv.png" alt="Sản phẩm 20"></td>
+                    <td>Quần jean họa tiết LV</td>
+                    <td>700.000đ</td>
+                    <td>28, 30, 32, 34</td>
+                    <td>17</td>
+                    <td><button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="thongtinshop">
+        <p><strong>T&Đ Shop</strong></p>
+        <p>Địa chỉ: xóm 5, thôn Năm Mẫu - xã Tứ Dân - huyện Khoái Châu - tỉnh Hưng Yên </p>
+        <p>Điện thoại: 0888 888 888</p>
+        <p>Email: T&Đshop@gmail.com</p>
+        <div class="banquyen">
+            <p>© 2025 Khoa CNTT - Trường ĐH Sư phạm Kỹ thuật Hưng Yên</p>
+            <p>Bản quyền thuộc về Đỗ Văn Trường & Nguyễn Duy Điền</p>
+        </div>
+    </div>
+</body>
+</html>

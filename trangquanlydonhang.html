@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuanLyDonHang - TDShop</title>
+    <link rel="stylesheet" href="btlweb.css">
+    <style>
+        .KhungTieudechung {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .mucmenu {
+            text-decoration: none;
+        }
+        .Khungnoidungchinh {
+            padding: 15px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x:auto ;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .chucnang {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .timkiem,.boloctrangthai {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .nutloc {
+            background-color: #007bff; 
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .bangdonhang {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+        .bangdonhang th {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .bangdonhang td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .nuthanhdong {
+            background-color: #6c757d; 
+            color: white;
+            padding: 6px 10px;
+            margin: 2px;
+            font-size: 0.8em;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .trangthai {
+            font-weight: bold;
+            padding: 3px 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        .trangthai.choxuly { background-color: #ffc107; color: #333; } 
+        .trangthai.dangxuly { background-color: #17a2b8; color: white; } 
+        .trangthai.danggiao { background-color: #007bff; color: white; } 
+        .trangthai.dagiao { background-color: #28a745; color: white; }
+        .trangthai.dahuy { background-color: #dc3545; color: white; } 
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>T&Đ Shop</h1>
+        <h3>Quản lý đơn hàng</h3>
+        <div>
+            <a href="trangquantri.html" style="color:white;">Trang chủ quản trị</a>   |
+            <a href="trangdangnhap.html" style="color:white;">Đăng xuất</a>
+        </div>
+    </div>
+
+    <div class="Khungnoidungchinh">
+        <h2>Danh sách đơn hàng</h2>
+
+        <div class="chucnang">
+            <input type="text" placeholder="Tìm kiếm đơn hàng..." class="timkiem">
+            <select class="trangthai">
+                <option value="">Tất cả trạng thái</option>
+                <option value="choxuly">Chờ xử lý</option>
+                <option value="dangxuly">Đang xử lý</option>
+                <option value="danggiao">Đang giao</option>
+                <option value="dagiao">Đã giao</option>
+                <option value="dahuy">Đã hủy</option>
+            </select>
+            <button class="nutloc">Lọc đơn hàng</button>
+        </div>
+        
+        <table class="bangdonhang">
+            <tr>
+                <th>Mã Đặt Hàng</th>
+                <th>Khách Hàng</th>
+                <th>Số điện thoại</th>
+                <th>Sản phẩm</th>
+                <th>Size</th>
+                <th>Ngày đặt</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th>
+            </tr>
+            <tr>
+                <td>#DH001</td>
+                <td>Nguyễn Việt An</td>
+                <td>0912345678</td>
+                <td>Áo sơ mi, Quần jeans</td>
+                <td>M, L</td>
+                <td>20/05/2025</td>
+                <td>850.000đ</td>
+                <td><span class="trangthai choxuly">Chờ xử lý</span></td>
+                <td>
+                    <button class="nuthanhdong"></i> Xem chi tiết</button> <button class="nuthanhdong"> Xác nhận</button>
+                </td>
+            </tr>
+            <tr>
+                <td>#DH002</td>
+                <td>Võ Thị Hoa</td>
+                <td>0987654321</td>
+                <td>Váy hoa, Túi xách</td>
+                <td>S, One Size</td>
+                <td>19/05/2025</td>
+                <td>1.200.000đ</td>
+                <td><span class="trangthai dangxuly">Đang xử lý</span></td>
+                <td>
+                    <button class="nuthanhdong"> Xem chi tiết</button>
+                    <button class="nuthanhdong"> Giao hàng</button>
+                </td>
+            </tr>
+            <tr>
+                <td>#DH003</td>
+                <td>Trần Văn Úy</td>
+                <td>0901122334</td>
+                <td>Áo hoodie</td>
+                <td>XL</td>
+                <td>18/05/2025</td>
+                <td>320.000đ</td>
+                <td><span class="trangthai dagiao">Đã giao</span></td>
+                <td>
+                    <button class="nuthanhdong"> Xem chi tiết</button>
+                    <button class="nuthanhdong"> Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>#DH004</td>
+                <td>Phạm Thị Hồng</td>
+                <td>0976543210</td>
+                <td>Giày thể thao, Vớ</td>
+                <td>40, Freesize</td>
+                <td>17/05/2025</td>
+                <td>500.000đ</td>
+                <td><span class="trangthai dahuy">Đã hủy</span></td>
+                <td>
+                    <button class="nuthanhdong"> Xem chi tiết</button>
+                    <button class="nuthanhdong"> Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>#DH005</td>
+                <td>Nguyễn Văn Bảo</td>
+                <td>0912345678</td>
+                <td>Áo thun, Quần short</td>
+                <td>M, L</td>
+                <td>16/05/2025</td>
+                <td>600.000đ</td>
+                <td>
+                    <span class="trangthai danggiao">Đang giao</span>
+                </td>
+                <td>
+                    <button class="nuthanhdong"> Xem chi tiết</button>
+                    <button class="nuthanhdong"> Giao hàng</button>
+                </td>
+            </tr>
+            <tr>
+                <td>#DH006</td>
+                <td>Nguyễn Thị Mai</td>
+                <td>0901234567</td>
+                <td>Áo AMIRI</td>
+                <td>M</td>
+                <td>15/05/2025</td>
+                <td>700.000đ</td>
+                <td><span class="trangthai choxuly">Chờ xử lý</span></td>
+                <td>
+                    <button class="nuthanhdong"> Xem chi tiết</button>
+                    <button class="nuthanhdong"> Xác nhận</button>
+                </td>
+            </tr>
+            <tr>
+                <td>#DH007</td>
+                <td>Nguyễn Văn Đại</td>
+                <td>0912345678</td>
+                <td>Áo sơ mi, Quần jeans</td>
+                <td>M, L</td>
+                <td>20/05/2025</td>
+                <td>850.000đ</td>
+                <td><span class="trangthai choxuly">Chờ xử lý</span></td>
+                <td>
+                    <button class="nuthanhdong"> Xem chi tiết</button> 
+                    <button class="nuthanhdong"> Xác nhận</button>
+                </td>
+            </tr>
+            <tr>
+                <td>#DH008</td>
+                <td>Vũ Xuân Hiệu</td>
+                <td>0987654321</td>
+                <td>Áo AMIRI,Giày AF1</td>
+                <td>S, One Size</td>
+                <td>19/05/2025</td>
+                <td>1.200.000đ</td>
+                <td><span class="trangthai dangxuly">Đang xử lý</span></td>
+                <td>
+                    <button class="nuthanhdong"> Xem chi tiết</button>
+                    <button class="nuthanhdong"> Giao hàng</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="thongtinshop">
+        <p><strong>T&Đ Shop</strong></p>
+        <p>Địa chỉ: xóm 5, thôn Năm Mẫu - xã Tứ Dân - huyện Khoái Châu - tỉnh Hưng Yên </p>
+        <p>Điện thoại: 0888 888 888</p>
+        <p>Email: T&Đshop@gmail.com</p>
+        <div class="banquyen">
+            <p>© 2025 Khoa CNTT - Trường ĐH Sư phạm Kỹ thuật Hưng Yên</p>
+            <p>Bản quyền thuộc về Đỗ Văn Trường & Nguyễn Duy Điền</p>
+        </div>
+    </div>
+</body>
+</html>
